@@ -7,14 +7,14 @@
 
 import React from "react"
 import Card from "react-bootstrap/Card"
-import TeamLogo from "../../images/team-logos/Georgia.svg"
+import TeamLogo from "../../images/team-logos/squared/Georgia Tech.png"
 
 const Team = (props) => (
 	<Card
 		style={{
 			fontWeight: `strong`,
-			color: `#BA0C2F`,
-			backgroundColor: `#000000`,
+			color: `#003057`,
+			backgroundColor: `#B3A369`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

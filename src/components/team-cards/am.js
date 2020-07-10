@@ -7,11 +7,12 @@
 
 import React from "react"
 import Card from "react-bootstrap/Card"
-import TeamLogo from "../../images/team-logos/Texas A&M.svg"
+import TeamLogo from "../../images/team-logos/squared/TAM.png"
 
 const Team = (props) => (
 	<Card
 		style={{
+			width: `15rem`,
 			fontWeight: `strong`,
 			color: `#0C2340`,
 			backgroundColor: `#E87722`,

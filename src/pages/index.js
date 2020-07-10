@@ -22,7 +22,7 @@ import CaliforniaCard from "../components/team-cards/california"
 import DartmouthCard from "../components/team-cards/dartmouth"
 import DelawareCard from "../components/team-cards/delaware"
 import FloridaCard from "../components/team-cards/florida"
-import GeorgiaCard from "../components/team-cards/georgia"
+import GeorgiaCard from "../components/team-cards/georgia-tech"
 import NebraskaCard from "../components/team-cards/nebraska"
 import NotreDameCard from "../components/team-cards/notre-dame"
 import OhioStateCard from "../components/team-cards/ohio-state"
@@ -44,6 +44,9 @@ const IndexPage = () => (
 					<VideoPlayer lg="6" md="8" s="10" xs="12" />
 				</Col>
 			</Row>
+			<br />
+			<p> list group </p>
+			<br />
 			<ListGroup horizontal className="flex-wrap align-items-stretch">
 				<ListGroup.Item>
 					<TeamCard name="Auburn" className="d-flex justify-content-between" />
@@ -58,6 +61,8 @@ const IndexPage = () => (
 					<DartmouthCard />
 				</ListGroup.Item>
 			</ListGroup>
+			<br />
+			<p> rows/cols (best rn) </p>
 			<br />
 			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 				<Col className="d-flex flex-fill">
@@ -76,6 +81,8 @@ const IndexPage = () => (
 					<DartmouthCard />
 				</Col>
 			</Row>
+			<br />
+			<p> rows/cols w/out specific responsiveness </p>
 			<br />
 			<Row>
 				<Col lg="3">

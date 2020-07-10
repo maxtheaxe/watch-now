@@ -7,7 +7,7 @@
 
 import React from "react"
 import Card from "react-bootstrap/Card"
-import TeamLogo from "../../images/team-logos/Rutgers.svg"
+import TeamLogo from "../../images/team-logos/squared/Rutgers.png"
 
 const Team = (props) => (
 	<Card
