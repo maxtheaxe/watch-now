@@ -7,12 +7,13 @@
 
 import React from "react"
 import Card from "react-bootstrap/Card"
-import TeamLogo from "../images/team-logos"
+import CardDeck from "react-bootstrap/CardDeck"
+import TeamLogo from "../images/team-logos/Auburn.svg"
 
 const Team = (props) => (
 	<Card
+		className="d-flex align-items-between"
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
 			color: `#0C2340`,
 			backgroundColor: `#E87722`,
@@ -21,7 +22,11 @@ const Team = (props) => (
 		}}
 	>
 		<Card.Img variant="top" src={TeamLogo} />
-		<Card.Body style={{padding: `0rem`}}>
+		<Card.Body
+			style={{
+				padding: `0rem`
+			}}
+		>
 			<Card.Title><h3>{props.name}</h3></Card.Title>
 		</Card.Body>
 	</Card>

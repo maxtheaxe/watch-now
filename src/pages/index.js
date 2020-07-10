@@ -14,6 +14,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import VideoPlayer from "../components/video-player"
 
+import TeamCard from "../components/team-card"
 // Obviously, there's a way better way to do this, but I'll do it out once layout is done
 import AuburnCard from "../components/team-cards/auburn"
 import AlabamaCard from "../components/team-cards/alabama"
@@ -43,9 +44,9 @@ const IndexPage = () => (
 					<VideoPlayer lg="6" md="8" s="10" xs="12" />
 				</Col>
 			</Row>
-			<ListGroup horizontal="md" className="justify-content-center align-items-center">
+			<ListGroup horizontal className="flex-wrap align-items-stretch">
 				<ListGroup.Item>
-					<AuburnCard />
+					<TeamCard name="Auburn" className="d-flex justify-content-between" />
 				</ListGroup.Item>
 				<ListGroup.Item>
 					<AlabamaCard />
@@ -57,6 +58,39 @@ const IndexPage = () => (
 					<DartmouthCard />
 				</ListGroup.Item>
 			</ListGroup>
+			<br />
+			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
+				<Col className="d-flex flex-fill">
+					<TeamCard name="Auburn" />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<AlabamaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<CaliforniaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<DartmouthCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<DartmouthCard />
+				</Col>
+			</Row>
+			<br />
+			<Row>
+				<Col lg="3">
+					<TeamCard name="Auburn" />
+				</Col>
+				<Col lg="3">
+					<TeamCard name="Auburn" />
+				</Col>
+				<Col lg="3">
+					<CaliforniaCard />
+				</Col>
+				<Col lg="3">
+					<DartmouthCard />
+				</Col>
+			</Row>
 			<Row className="justify-content-center my-3">
 				<Col md="6">
 					<ListGroup>

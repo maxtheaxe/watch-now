@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/Ohio State.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#CE0F3D`,
+			backgroundColor: `#000000`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

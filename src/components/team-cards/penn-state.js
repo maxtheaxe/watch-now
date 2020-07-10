@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/Penn State.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#041E42`,
+			backgroundColor: `#FFFFFF`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

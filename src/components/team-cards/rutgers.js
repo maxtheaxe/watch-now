@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/Rutgers.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#cc0033`,
+			backgroundColor: `#000000`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/TCU.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#4d1979`,
+			backgroundColor: `#a3a9ac`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

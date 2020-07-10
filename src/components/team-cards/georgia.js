@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/Georgia.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#BA0C2F`,
+			backgroundColor: `#000000`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}

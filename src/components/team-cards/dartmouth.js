@@ -12,10 +12,9 @@ import TeamLogo from "../../images/team-logos/Dartmouth.svg"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `18rem`,
 			fontWeight: `strong`,
-			color: `#0C2340`,
-			backgroundColor: `#E87722`,
+			color: `#046A38`,
+			backgroundColor: `#D3D3D3`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`
 		}}
