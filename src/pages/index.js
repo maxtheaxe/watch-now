@@ -22,7 +22,7 @@ import CaliforniaCard from "../components/team-cards/california"
 import DartmouthCard from "../components/team-cards/dartmouth"
 import DelawareCard from "../components/team-cards/delaware"
 import FloridaCard from "../components/team-cards/florida"
-import GeorgiaCard from "../components/team-cards/georgia-tech"
+import GeorgiaTechCard from "../components/team-cards/georgia-tech"
 import NebraskaCard from "../components/team-cards/nebraska"
 import NotreDameCard from "../components/team-cards/notre-dame"
 import OhioStateCard from "../components/team-cards/ohio-state"
@@ -34,6 +34,9 @@ import RutgersCard from "../components/team-cards/rutgers"
 import TCUCard from "../components/team-cards/tcu"
 import AMCard from "../components/team-cards/am"
 import USCCard from "../components/team-cards/usc"
+import BostonCollegeCard from "../components/team-cards/boston-college"
+import YaleCard from "../components/team-cards/yale"
+import HoustonCard from "../components/team-cards/houston"
 
 const IndexPage = () => (
 	<Layout pageInfo={{ pageName: "index" }}>
@@ -45,59 +48,78 @@ const IndexPage = () => (
 				</Col>
 			</Row>
 			<br />
-			<p> list group </p>
-			<br />
-			<ListGroup horizontal className="flex-wrap align-items-stretch">
-				<ListGroup.Item>
-					<TeamCard name="Auburn" className="d-flex justify-content-between" />
-				</ListGroup.Item>
-				<ListGroup.Item>
-					<AlabamaCard />
-				</ListGroup.Item>
-				<ListGroup.Item>
-					<CaliforniaCard />
-				</ListGroup.Item>
-				<ListGroup.Item>
-					<DartmouthCard />
-				</ListGroup.Item>
-			</ListGroup>
-			<br />
-			<p> rows/cols (best rn) </p>
-			<br />
 			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 				<Col className="d-flex flex-fill">
 					<TeamCard name="Auburn" />
 				</Col>
 				<Col className="d-flex flex-fill">
+					<NebraskaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<CaliforniaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<DartmouthCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<DelawareCard />
+				</Col>
+			</Row>
+			<br />
+			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
+				<Col className="d-flex flex-fill">
+					<FloridaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<GeorgiaTechCard />
+				</Col>
+				<Col className="d-flex flex-fill">
 					<AlabamaCard />
 				</Col>
 				<Col className="d-flex flex-fill">
-					<CaliforniaCard />
+					<NotreDameCard />
 				</Col>
 				<Col className="d-flex flex-fill">
-					<DartmouthCard />
-				</Col>
-				<Col className="d-flex flex-fill">
-					<DartmouthCard />
+					<OhioStateCard />
 				</Col>
 			</Row>
 			<br />
-			<p> rows/cols w/out specific responsiveness </p>
-			<br />
-			<Row>
-				<Col lg="3">
-					<TeamCard name="Auburn" />
+			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
+				<Col className="d-flex flex-fill">
+					<PurdueCard />
 				</Col>
-				<Col lg="3">
-					<TeamCard name="Auburn" />
+				<Col className="d-flex flex-fill">
+					<PennStateCard />
 				</Col>
-				<Col lg="3">
-					<CaliforniaCard />
+				<Col className="d-flex flex-fill">
+					<PrincetonCard />
 				</Col>
-				<Col lg="3">
-					<DartmouthCard />
+				<Col className="d-flex flex-fill">
+					<OklahomaCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<RutgersCard />
 				</Col>
 			</Row>
+			<br />
+			<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
+				<Col className="d-flex flex-fill">
+					<TCUCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<USCCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<BostonCollegeCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<YaleCard />
+				</Col>
+				<Col className="d-flex flex-fill">
+					<HoustonCard />
+				</Col>
+			</Row>
+			<br />
 			<Row className="justify-content-center my-3">
 				<Col md="6">
 					<ListGroup>

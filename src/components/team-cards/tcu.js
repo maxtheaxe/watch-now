@@ -16,7 +16,8 @@ const Team = (props) => (
 			color: `#4d1979`,
 			backgroundColor: `#a3a9ac`,
 			paddingRight: `1rem`,
-			paddingLeft: `1rem`
+			paddingLeft: `1rem`,
+			paddingTop: `0.25rem`
 		}}
 	>
 		<Card.Img variant="top" src={TeamLogo} />

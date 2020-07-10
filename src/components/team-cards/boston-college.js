@@ -7,14 +7,14 @@
 
 import React from "react"
 import Card from "react-bootstrap/Card"
-import TeamLogo from "../../images/team-logos/squared/Nebraska.png"
+import TeamLogo from "../../images/team-logos/squared/Boston College.png"
 
 const Team = (props) => (
 	<Card
 		style={{
 			fontWeight: `strong`,
-			color: `#e41c38`,
-			backgroundColor: `#000000`,
+			color: `#8a100b`,
+			backgroundColor: `#b29d6c`,
 			paddingRight: `1rem`,
 			paddingLeft: `1rem`,
 			paddingTop: `0.25rem`
@@ -22,7 +22,7 @@ const Team = (props) => (
 	>
 		<Card.Img variant="top" src={TeamLogo} />
 		<Card.Body style={{padding: `0rem`}}>
-			<Card.Title><h3>Nebraska</h3></Card.Title>
+			<Card.Title><h3>BC</h3></Card.Title>
 		</Card.Body>
 	</Card>
 )
