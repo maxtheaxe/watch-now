@@ -38,8 +38,6 @@ const handleClick = value => () => alert(value)
 const TeamList = (props) => (
 	<Container className="text-center">
 		<br />
-		{/*<button onClick={handleClick('Bar')}>Speak</button>
-		<br /><br />*/}<br />
 		<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 			<Col className="d-flex flex-fill" >
 				<TeamCard name="Auburn" onClick={handleClick('Bar')} />

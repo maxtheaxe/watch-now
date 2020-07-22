@@ -9,6 +9,8 @@ import React from "react"
 import Card from "react-bootstrap/Card"
 import TeamLogo from "../../images/team-logos/squared/Notre Dame.png"
 
+// https://www.sitepoint.com/community/t/relative-font-sizes/4118
+
 const Team = (props) => (
 	<Card
 		style={{
@@ -22,7 +24,7 @@ const Team = (props) => (
 	>
 		<Card.Img variant="top" src={TeamLogo} />
 		<Card.Body style={{padding: `0rem`}}>
-			<Card.Title><h3>Notre Dame</h3></Card.Title>
+			<Card.Title><h3 style={{fontSize: `125%`, padding: `1px`}}>Notre Dame</h3></Card.Title>
 		</Card.Body>
 	</Card>
 )

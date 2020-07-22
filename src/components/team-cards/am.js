@@ -12,7 +12,6 @@ import TeamLogo from "../../images/team-logos/squared/TAM.png"
 const Team = (props) => (
 	<Card
 		style={{
-			width: `15rem`,
 			fontWeight: `strong`,
 			color: `#0C2340`,
 			backgroundColor: `#E87722`,
