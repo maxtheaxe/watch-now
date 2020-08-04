@@ -13,6 +13,7 @@ const VideoPlayer = (props) => (
 			width: `100%`
 		}} 
 		controls
+		autoplay
 	>
 		<source key={props.key} src={props.src} type="video/mp4" />
 	</video>

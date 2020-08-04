@@ -66,22 +66,22 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1966%20TCU%20VS%20NEBRASKA.mp4", "nebraska")}>
 							<NebraskaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/2002%20california%20vs%20stanford.mp4", "california")}>
 							<CaliforniaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1983%2010%2029%20Dartmouth%20vs%20Yale.mp4", "dartmouth")}>
 							<DartmouthCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1969%20FLORIDA%20VS%20TULANE.mp4", "florida")}>
 							<DelawareCard />
 						</button>
 					</Col>
@@ -104,12 +104,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1980%20army%20vs%20notre%20dame%202.mp4", "auburn")}>
 							<NotreDameCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1976%201%201%20UCLA%20vs%20Ohio%20State%20Rose%20Bowl%20branded.mp4", "ohiostate")}>
 							<OhioStateCard />
 						</button>
 					</Col>
@@ -117,17 +117,17 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1962%2010%2020%20Michigan%20vs%20Purdue%201.mp4", "auburn")}>
 							<PurdueCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1963%20ohio%20state%20vs%20penn%20state.mp4", "auburn")}>
 							<PennStateCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1966%20PRINCETON%20FOOTBALL%20HIGHLIGHTS.mp4", "princeton")}>
 							<PrincetonCard />
 						</button>
 					</Col>
@@ -155,12 +155,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1990%20ohio%20state%20vs%20boston%20college.mp4", "auburn")}>
 							<BostonCollegeCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1979%209%2022%20YALE%20VS%20BROWN.mp4", "yale")}>
 							<YaleCard />
 						</button>
 					</Col>
@@ -176,7 +176,10 @@ class WatchApp extends Component {
 	}
 	// https://www.w3schools.com/js/js_arrow_function.asp
 	// https://stackoverflow.com/a/53499596/4513452
-	updatePosition = (newVid, newK) => this.setState({ vid: newVid, k: newK });
+	updatePosition(newVid, newK) {
+		this.setState({ vid: newVid, k: newK });
+		window.scrollTo(0, 0); // scroll to top (to help indicate new video is playing)
+	}
 }
 
 export default WatchApp
