@@ -35,7 +35,7 @@ const Layout = ({ children, pageInfo }) => (
 					{/* <Navbar pageInfo={pageInfo} /> */}
 					<Row noGutters>
 						<Col>
-							<Container className="mt-5">
+							<Container className="mt-2">
 								<main>{children}</main>
 							</Container>
 						</Col>
@@ -46,9 +46,9 @@ const Layout = ({ children, pageInfo }) => (
 						<Col className="footer-col">
 							<footer>
 								<span>
-									© {new Date().getFullYear()}, Built with
+									© {new Date().getFullYear()}, Powered by
 									{` `}
-									<a href="https://www.gatsbyjs.org">Gatsby</a>
+									<a href="http://www.footballvideos.com/">SPARX</a>
 								</span>
 							</footer>
 						</Col>
