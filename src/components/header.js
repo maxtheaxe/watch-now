@@ -16,17 +16,21 @@ const Header = ({ siteTitle }) => (
 				textAlign: `center`,
 			}}
 		>
-			<h1 style={{ margin: 0 }}>
+			<h1 style={{ margin: 0, color: `white` }}>
 				<Link
 					to="/"
-					style={{
-						color: `white`,
-						textDecoration: `none`,
-					}}
-				>
+					style={{textDecoration: `none`, color: `white`}}
+					onClick={() => window.location.reload()}>
 					{siteTitle}
 				</Link>
 			</h1>
+			<h6 style={{ margin: 3, color: `white`}}>
+				by <a
+					style={{ margin: 0, color: `gray`, textDecoration: `none` }}
+					href="http://www.footballvideos.com" target="_blank">
+					FootballVideos.com
+				</a>
+			</h6>
 		</div>
 	</header>
 )

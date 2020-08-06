@@ -145,12 +145,12 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "1966 TCU vs. Nebraska")}>
 							<TCUCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "auburn")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "Unselected USC Game")}>
 							<USCCard />
 						</button>
 					</Col>

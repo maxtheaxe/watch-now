@@ -10,7 +10,7 @@ import React from "react"
 const VideoPlayer = (props) => (
 	<video
 		style={{
-			width: `100%`
+			width: `80%`
 		}} 
 		controls
 		autoplay
