@@ -66,22 +66,22 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1966%20TCU%20VS%20NEBRASKA.mp4", "1966 Nebraska vs. TCU")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/IxY7iTMg/1976-oklahoma-vs-nebraska-3_dvd.mp4", "1976 Nebraska vs. TCU")}>
 							<NebraskaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/2002%20california%20vs%20stanford.mp4", "2002 Cal vs. Stanford")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/2002%20california%20vs%20stanford.mp4", "2002 Cal vs. Stanford")}>
 							<CaliforniaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1983%2010%2029%20Dartmouth%20vs%20Yale.mp4", "1983 Dartmouth vs. Yale")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1983%2010%2029%20Dartmouth%20vs%20Yale.mp4", "1983 Dartmouth vs. Yale")}>
 							<DartmouthCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1969%20FLORIDA%20VS%20TULANE.mp4", "Unselected Delaware Game")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected Delaware Game (1958 NFL Championship)")}>
 							<DelawareCard />
 						</button>
 					</Col>
@@ -89,7 +89,7 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1969%20FLORIDA%20VS%20TULANE.mp4", "1969 Florida vs. Tulane")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/zOXXlvu2/1969-florida-vs-tulane_dvd.mp4", "1969 Florida vs. Tulane")}>
 							<FloridaCard />
 						</button>
 					</Col>
@@ -104,12 +104,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1980%20army%20vs%20notre%20dame%202.mp4", "1980 Notre Dame vs. Army")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/luEcx6bB/1980-army-vs-notre-dame-1_dvd.mp4", "1980 Notre Dame vs. Army")}>
 							<NotreDameCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1976%201%201%20UCLA%20vs%20Ohio%20State%20Rose%20Bowl%20branded.mp4", "1963 Ohio State vs. Penn State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1976%201%201%20UCLA%20vs%20Ohio%20State%20Rose%20Bowl%20branded.mp4", "1976 Rose Bowl | Ohio State vs. UCLA")}>
 							<OhioStateCard />
 						</button>
 					</Col>
@@ -117,17 +117,17 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1962%2010%2020%20Michigan%20vs%20Purdue%201.mp4", "1962 Purdue vs. Michigan")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/6glexDs0/1962-10-20-michigan-vs-purdue-2_dvd.mp4", "1962 Purdue vs. Michigan")}>
 							<PurdueCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1963%20ohio%20state%20vs%20penn%20state.mp4", "1963 Penn State vs. Ohio State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/0m3uhR3x/1963-ohio-state-vs-penn-state-2_dvd.mp4", "1963 Penn State vs. Ohio State")}>
 							<PennStateCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1966%20PRINCETON%20FOOTBALL%20HIGHLIGHTS.mp4", "1966 Princeton Football Highlights")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/XQ3UY6ug/1966-princeton-football-highlights-2_dvd.mp4", "1966 Princeton Football Highlights")}>
 							<PrincetonCard />
 						</button>
 					</Col>
@@ -145,7 +145,7 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "1966 TCU vs. Nebraska")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/DHhf6f7T/1965-tcu-vs-nebraska_dvd.mp4", "1965 TCU vs. Nebraska")}>
 							<TCUCard />
 						</button>
 					</Col>
@@ -155,12 +155,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1990%20ohio%20state%20vs%20boston%20college.mp4", "1990 Boston College vs. Ohio State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1990%20ohio%20state%20vs%20boston%20college.mp4", "1990 Boston College vs. Ohio State")}>
 							<BostonCollegeCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://srv-file19.gofile.io/download/QHJdZK/1979%209%2022%20YALE%20VS%20BROWN.mp4", "1979 Yale vs. Brown")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/eizOGrsk/1979-9-22-yale-vs-brown_dvd.mp4", "1979 Yale vs. Brown")}>
 							<YaleCard />
 						</button>
 					</Col>
