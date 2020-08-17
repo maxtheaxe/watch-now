@@ -71,12 +71,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/2002%20california%20vs%20stanford.mp4", "2002 Cal vs. Stanford")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/ITqO3Ahk/2002-california-vs-stanford_reencoded_dvd.mp4", "2002 Cal vs. Stanford")}>
 							<CaliforniaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1983%2010%2029%20Dartmouth%20vs%20Yale.mp4", "1983 Dartmouth vs. Yale")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/VqLR5mJ1/1983-10-29-dartmouth-vs-yale_reencoded-1_dvd.mp4", "1983 Dartmouth vs. Yale")}>
 							<DartmouthCard />
 						</button>
 					</Col>
@@ -109,7 +109,7 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1976%201%201%20UCLA%20vs%20Ohio%20State%20Rose%20Bowl%20branded.mp4", "1976 Rose Bowl | Ohio State vs. UCLA")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/reB60OXL/1976-1-1-ucla-vs-ohio-state-rose-bowl-branded_reencoded-4_hd.mp4", "1976 Rose Bowl | Ohio State vs. UCLA")}>
 							<OhioStateCard />
 						</button>
 					</Col>
@@ -150,12 +150,12 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "Unselected USC Game")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected USC Game (1958 NFL Championship)")}>
 							<USCCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cloud.cloud-technology.io/remote.php/dav/files/JewishJuggernaut/max/fbv_temp/1990%20ohio%20state%20vs%20boston%20college.mp4", "1990 Boston College vs. Ohio State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/QduW50ne/1990-ohio-state-vs-boston-college_reencoded_dvd.mp4", "1990 Boston College vs. Ohio State")}>
 							<BostonCollegeCard />
 						</button>
 					</Col>
@@ -165,7 +165,7 @@ class WatchApp extends Component {
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4", "Unselected Houston Football Game")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected Houston Football Game (1958 NFL Championship)")}>
 							<HoustonCard />
 						</button>
 					</Col>

@@ -10,6 +10,7 @@
 		"bootstrap": "^4.3.1",
 		"gatsby": "^2.3.34",
 		"gatsby-image": "^2.0.41",
+		"gatsby-plugin-google-analytics": "^2.3.13",
 		"gatsby-plugin-manifest": "^2.0.29",
 		"gatsby-plugin-offline": "^2.0.25",
 		"gatsby-plugin-react-helmet": "^3.0.12",
@@ -42,7 +43,8 @@
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-		"deploy": "gatsby build --prefix-paths && gh-pages -d public"
+		"deploy": "gatsby build --prefix-paths && gh-pages -d public",
+		"burge": "gatsby build && surge public/ footballvideos.xyz"
 	},
 	"repository": {
 		"type": "git",

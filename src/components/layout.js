@@ -13,7 +13,14 @@ import { Container, Row, Col } from "react-bootstrap"
 import Header from "./header"
 import Navbar from "./navBar"
 
+import favicon from '../images/favicon.ico'
+import Helmet from 'react-helmet'
+
 const Layout = ({ children, pageInfo }) => (
+<>
+	<Helmet>
+		<link rel="icon" href={favicon} />
+	</Helmet>
 	<StaticQuery
 		query={graphql`
 			query SiteTitleQuery {
@@ -48,7 +55,7 @@ const Layout = ({ children, pageInfo }) => (
 								<span>
 									© {new Date().getFullYear()}, Powered by
 									{` `}
-									<a href="http://www.footballvideos.com/">SPARX</a>
+									<a href="http://www.footballvideos.com/">Football Videos</a>
 								</span>
 							</footer>
 						</Col>
@@ -57,6 +64,7 @@ const Layout = ({ children, pageInfo }) => (
 			</>
 		)}
 	/>
+</>
 )
 
 export default Layout
