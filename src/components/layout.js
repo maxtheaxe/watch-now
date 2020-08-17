@@ -55,7 +55,7 @@ const Layout = ({ children, pageInfo }) => (
 								<span>
 									© {new Date().getFullYear()}, Powered by
 									{` `}
-									<a href="http://www.footballvideos.com/">Football Videos</a>
+									<a href="http://www.footballvideos.com/" target="_blank">Football Videos</a>
 								</span>
 							</footer>
 						</Col>

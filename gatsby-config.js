@@ -1,7 +1,7 @@
 module.exports = {
 	// pathPrefix: "/watch-now/docs", // for gh-pages
 	siteMetadata: {
-		title: `watch now`,
+		title: `watch football now`,
 		description: `page for watching different categories of videos with maximum simplicity`,
 		author: `Max Perrello`,
 	},

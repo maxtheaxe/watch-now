@@ -38,13 +38,15 @@ class WatchApp extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			vid: "https://archive.org/download/1957NflChampionshipGame/57ChampionshipGame.mp4",
-			k: "1957 NFL Championship | Lions vs. Browns"
+			vid: "https://archive.org/download/1957NflChampionshipGame/57ChampionshipGame.mp4", // main video link
+			k: "1957 NFL Championship | Lions vs. Browns", // main video title
+			thumb: "https://ia800503.us.archive.org/32/items/1957NflChampionshipGame/__ia_thumb.jpg" // main video thumbnail
 		};
 	}
 	render() {
 		const vid = this.state.vid
 		const k = this.state.k
+		const thumb = this.state.thumb
 		return (
 			<Container className="text-center">
 				<Row>
@@ -53,7 +55,7 @@ class WatchApp extends Component {
 							{/* video title */}
 							<h1>{k}</h1>
 							{/* key tells react video source has changed */}
-							<VideoPlayer src={vid} key={k} />
+							<VideoPlayer src={vid} key={k} thumb={thumb} />
 						</div>
 					</Col>
 				</Row>
@@ -61,27 +63,47 @@ class WatchApp extends Component {
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					{/* clickable cards! https://stackoverflow.com/a/62821164/4513452 and https://stackoverflow.com/a/19982424/4513452 */}
 					<Col className="d-flex flex-fill" >
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia802905.us.archive.org/22/items/rg8991957/RG899_1957%20Auburn%20versus%20Mississippi%20State%20football.mp4", "1957 Auburn vs. Mississippi State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia802905.us.archive.org/22/items/rg8991957/RG899_1957%20Auburn%20versus%20Mississippi%20State%20football.mp4", // video link
+							"1957 Auburn vs. Mississippi State", // video title
+							"https://ia802905.us.archive.org/22/items/rg8991957/__ia_thumb.jpg" // thumbnail image
+							)}>
 							<TeamCard name="Auburn" />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/IxY7iTMg/1976-oklahoma-vs-nebraska-3_dvd.mp4", "1976 Nebraska vs. TCU")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/IxY7iTMg/1976-oklahoma-vs-nebraska-3_dvd.mp4", // video link
+							"1976 Nebraska vs. Oklahoma", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1976-oklahoma-vs-nebraska-3_std.original.jpg" // thumbnail image
+							)}>
 							<NebraskaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/ITqO3Ahk/2002-california-vs-stanford_reencoded_dvd.mp4", "2002 Cal vs. Stanford")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/ITqO3Ahk/2002-california-vs-stanford_reencoded_dvd.mp4", // video link
+							"2002 Cal vs. Stanford", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/2002-california-vs-stanford_reencoded_std.original.jpg" // thumbnail image
+							)}>
 							<CaliforniaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/VqLR5mJ1/1983-10-29-dartmouth-vs-yale_reencoded-1_dvd.mp4", "1983 Dartmouth vs. Yale")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/VqLR5mJ1/1983-10-29-dartmouth-vs-yale_reencoded-1_dvd.mp4", // video link
+							"1983 Dartmouth vs. Yale", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1983-10-29-dartmouth-vs-yale_reencoded-1_dvd.original.jpg" // thumbnail image
+							)}>
 							<DartmouthCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected Delaware Game (1958 NFL Championship)")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", // video link
+							"Delaware Game Coming Soon", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/coming-soon-thumbnail.png" // thumbnail image
+							)}>
 							<DelawareCard />
 						</button>
 					</Col>
@@ -89,27 +111,47 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/zOXXlvu2/1969-florida-vs-tulane_dvd.mp4", "1969 Florida vs. Tulane")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/zOXXlvu2/1969-florida-vs-tulane_dvd.mp4", // video link
+							"1969 Florida vs. Tulane", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1969-florida-vs-tulane_std.original.jpg" // thumbnail image
+							)}>
 							<FloridaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800105.us.archive.org/5/items/87534CaliforniaOrBust/87534%20California%20Or%20Bust.mp4", "1929 Georgia Tech Journey to 14th Rose Bowl")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800105.us.archive.org/5/items/87534CaliforniaOrBust/87534%20California%20Or%20Bust.mp4", // video link
+							"Georgia Tech Game Coming Soon", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/coming-soon-thumbnail.png" // thumbnail image
+							)}>
 							<GeorgiaTechCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800503.us.archive.org/22/items/G8RB8R-1992ALABAMAVsFLORIDASECChampionshipGame213/G8RB8R-1992ALABAMAVsFLORIDASECChampionshipGame213.mp4", "1992 SEC Championship | Alabama vs. Florida")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800503.us.archive.org/22/items/G8RB8R-1992ALABAMAVsFLORIDASECChampionshipGame213/G8RB8R-1992ALABAMAVsFLORIDASECChampionshipGame213.mp4", // video link
+							"1992 SEC Championship | Alabama vs. Florida", // video title
+							"https://archive.org/download/G8RB8R-1992ALABAMAVsFLORIDASECCHAMPIONSHIPGAME673/G8RB8R-1992ALABAMAVsFLORIDASECCHAMPIONSHIPGAME673.thumbs/G8RB8R-1992ALABAMAVsFLORIDASECCHAMPIONSHIPGAME673_000027.jpg" // thumbnail image
+							)}>
 							<AlabamaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/luEcx6bB/1980-army-vs-notre-dame-1_dvd.mp4", "1980 Notre Dame vs. Army")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/luEcx6bB/1980-army-vs-notre-dame-1_dvd.mp4", // video link
+							"1980 Notre Dame vs. Army", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1980-army-vs-notre-dame-1_std.original.jpg" // thumbnail image
+							)}>
 							<NotreDameCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/reB60OXL/1976-1-1-ucla-vs-ohio-state-rose-bowl-branded_reencoded-4_hd.mp4", "1976 Rose Bowl | Ohio State vs. UCLA")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/reB60OXL/1976-1-1-ucla-vs-ohio-state-rose-bowl-branded_reencoded-4_hd.mp4", // video link
+							"1976 Rose Bowl | Ohio State vs. UCLA", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1976-1-1-ucla-vs-ohio-state-rose-bowl-branded_reencoded-4_dvd.original.jpg" // thumbnail image
+							)}>
 							<OhioStateCard />
 						</button>
 					</Col>
@@ -117,27 +159,47 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/6glexDs0/1962-10-20-michigan-vs-purdue-2_dvd.mp4", "1962 Purdue vs. Michigan")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/6glexDs0/1962-10-20-michigan-vs-purdue-2_dvd.mp4", // video link
+							"1962 Purdue vs. Michigan", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1962-10-20-michigan-vs-purdue-2_dvd.original.jpg" // thumbnail image
+							)}>
 							<PurdueCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/0m3uhR3x/1963-ohio-state-vs-penn-state-2_dvd.mp4", "1963 Penn State vs. Ohio State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/0m3uhR3x/1963-ohio-state-vs-penn-state-2_dvd.mp4", // video link
+							"1963 Penn State vs. Ohio State", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1963-ohio-state-vs-penn-state-2_std.original.jpg" // thumbnail image
+							)}>
 							<PennStateCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/XQ3UY6ug/1966-princeton-football-highlights-2_dvd.mp4", "1966 Princeton Football Highlights")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/XQ3UY6ug/1966-princeton-football-highlights-2_dvd.mp4", // video link
+							"1966 Princeton Football Highlights", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1966-princeton-football-highlights-2_std.original.jpg" // thumbnail image
+							)}>
 							<PrincetonCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800208.us.archive.org/11/items/CEP482/CEP482_512kb.mp4", "1951 Sugar Bowl | Oklahoma vs. Kentucky")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800208.us.archive.org/11/items/CEP482/CEP482_512kb.mp4", // video link
+							"1951 Sugar Bowl | Oklahoma vs. Kentucky", // video title
+							"https://archive.org/download/CEP482/CEP482.thumbs/CEP482_000001.jpg" // thumbnail image
+							)}>
 							<OklahomaCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia801600.us.archive.org/26/items/NCAABasketball.RutgersScarletKnightsMarylandTerrapins24.01.17/NCAA%20Basketball.%20Rutgers%20Scarlet%20Knights%20-%20Maryland%20Terrapins%2024.01.17.mp4", "2017 Rutgers vs. Maryland Basketball")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia801600.us.archive.org/26/items/NCAABasketball.RutgersScarletKnightsMarylandTerrapins24.01.17/NCAA%20Basketball.%20Rutgers%20Scarlet%20Knights%20-%20Maryland%20Terrapins%2024.01.17.mp4", // video link
+							"Rutgers Game Coming Soon", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/coming-soon-thumbnail.png" // thumbnail image
+							)}>
 							<RutgersCard />
 						</button>
 					</Col>
@@ -145,27 +207,47 @@ class WatchApp extends Component {
 				<br />
 				<Row flex xl="5" lg="4" md="3" sm="2" xs="1">
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/DHhf6f7T/1965-tcu-vs-nebraska_dvd.mp4", "1965 TCU vs. Nebraska")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/DHhf6f7T/1965-tcu-vs-nebraska_dvd.mp4", // video link
+							"1965 TCU vs. Nebraska", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1965-tcu-vs-nebraska_std.original.jpg" // thumbnail image
+							)}>
 							<TCUCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected USC Game (1958 NFL Championship)")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", // video link
+							"USC Game Coming Soon", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/coming-soon-thumbnail.png" // thumbnail image
+							)}>
 							<USCCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/QduW50ne/1990-ohio-state-vs-boston-college_reencoded_dvd.mp4", "1990 Boston College vs. Ohio State")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/QduW50ne/1990-ohio-state-vs-boston-college_reencoded_dvd.mp4", // video link
+							"1990 Boston College vs. Ohio State", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1990-ohio-state-vs-boston-college_reencoded_std.original.jpg" // thumbnail image
+							)}>
 							<BostonCollegeCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://videos.files.wordpress.com/eizOGrsk/1979-9-22-yale-vs-brown_dvd.mp4", "1979 Yale vs. Brown")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://videos.files.wordpress.com/eizOGrsk/1979-9-22-yale-vs-brown_dvd.mp4", // video link
+							"1979 Yale vs. Brown", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/1979-9-22-yale-vs-brown.png" // thumbnail image
+							)}>
 							<YaleCard />
 						</button>
 					</Col>
 					<Col className="d-flex flex-fill">
-						<button type="button" class="rounded" onClick={() => this.updatePosition("https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", "Unselected Houston Football Game (1958 NFL Championship)")}>
+						<button type="button" class="rounded" onClick={() => this.updatePosition(
+							"https://ia800603.us.archive.org/27/items/1958NflChampionship/1958NflChampionship.mp4", // video link
+							"Houston Game Coming Soon", // video title
+							"http://nas.wou.mybluehost.me/wp-content/uploads/2020/08/coming-soon-thumbnail.png" // thumbnail image
+							)}>
 							<HoustonCard />
 						</button>
 					</Col>
@@ -176,8 +258,8 @@ class WatchApp extends Component {
 	}
 	// https://www.w3schools.com/js/js_arrow_function.asp
 	// https://stackoverflow.com/a/53499596/4513452
-	updatePosition(newVid, newK) {
-		this.setState({ vid: newVid, k: newK }); // inserts new video into video player
+	updatePosition(newVid, newK, newThumb) {
+		this.setState({ vid: newVid, k: newK, thumb: newThumb }); // inserts new video and thumbnail into video player
 		window.scrollTo(0, 0); // scroll to top (to help indicate new video is playing)
 	}
 }

@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
 			</h1>
 			<h6 style={{ margin: 3, color: `white`}}>
 				by <a
-					style={{ margin: 0, color: `gray`, textDecoration: `none` }}
+					style={{ margin: 0, textDecoration: `none` }}
 					href="http://www.footballvideos.com" target="_blank">
 					FootballVideos.com
 				</a>

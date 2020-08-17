@@ -14,6 +14,7 @@ const VideoPlayer = (props) => (
 		}} 
 		controls
 		autoplay
+		poster={props.thumb}
 	>
 		<source key={props.key} src={props.src} type="video/mp4" />
 	</video>
@@ -22,7 +23,8 @@ const VideoPlayer = (props) => (
 VideoPlayer.defaultProps = {
 	key: `default`,
 	// src: `https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4`
-	src: `https://archive.org/download/1957NflChampionshipGame/57ChampionshipGame.mp4`
+	src: `https://archive.org/download/1957NflChampionshipGame/57ChampionshipGame.mp4`,
+	thumb: `none`
 }
 
 export default VideoPlayer
