@@ -24,7 +24,7 @@ const Team = (props) => (
 	>
 		<Card.Img variant="top" src={TeamLogo} />
 		<Card.Body style={{padding: `0rem`}}>
-			<Card.Title><h3 style={{fontSize: `125%`, padding: `1px`}}>Notre Dame</h3></Card.Title>
+			<Card.Title><h3 style={{fontSize: `120%`, padding: `1px`}}>Notre Dame</h3></Card.Title>
 		</Card.Body>
 	</Card>
 )
