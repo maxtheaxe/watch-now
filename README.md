@@ -1,4 +1,7 @@
 # watch now
+
+__this is no longer being updated, feel free to fork it__
+
 _a single page site for watching external videos with maximum simplicity_
 * Intuitive interface
 * In-page video loading
